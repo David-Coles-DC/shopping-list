@@ -47,7 +47,7 @@ You can reorder the list by dragging and dropping the items.
 
 ## Final thoughts
 
-If I was to put this project into production there are more things that I would do to it if I had more time, including butt not limited to;
+If I was to put this project into production there are more things that I would do to it if I had more time, including but not limited to;
 
 * **Automated testing** - Jest or Cypress to complete automated testing.
 * **limited timed sessions** - When somebody logs in the API would create an authorisation key with an expiry time, the expiry time would be increased each time data was retrieved from the API, if the expiry time is reached then that user would be required to re-login to increase security.
