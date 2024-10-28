@@ -17,15 +17,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
 
 ## Database
-The project has a MySQL database set up using [Aiven](https://aiven.io/) as it's free and saves the hassle of having to set up a new local database to test the project, the connection details of this can be found in an .env file. However Git won't let me push a .env file into the repository for security reasons so you will need to recreate it.
-
-```
-DB_HOST=shopping-list-dc-shopping-list-dc.d.aivencloud.com
-DB_PASS=AVNS_Mb5x2yk5ljbkV-P8hxo
-DB_PORT=17803
-DB_SCHEMA=defaultdb
-DB_USER=avnadmin
-```
+The project has a MySQL database set up using [Aiven](https://aiven.io/) as it's free and saves the hassle of having to set up a new local database to test the project, the connection details of this can be found in the .env file.
 
 The database structure has been exported so that you can use a different MySQL database if you want to, this is found in the database.sql file.
 
