@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shopping List - David Coles - Mayden Tech Test
 
-## Getting Started
+To complete this tech test I chose to use Next.js (15), the reason for this is that it is a React framework and I was aware that you used React in your current tech stack, and although I've not used this in a professional environment I wanted to show that I could use a new technology to achieve a desired result.
 
-First, run the development server:
+First, clone the repository and then run
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+npm i 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next start a dev server to run the app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
 
-## Learn More
+## Database
+The project has a MySQL database set up using [Aiven](https://aiven.io/) as it's free and saves the hassle of having to set up a new local database to test the project, the connection details of this can be found in the .env file.
 
-To learn more about Next.js, take a look at the following resources:
+The database structure has been exported so that you can use a different MySQL database if you want to, this is found in the database.sql file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Packages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I chose several packages to use in this project to help speed it along and show that I'm capable of integrating additional packages into a project, some of these are;
 
-## Deploy on Vercel
+* **ShadCN** - This was chosen because it has some nice looking components like buttons, inputs, etc and would save time in making the project look more professional.
+* **Tailwind** - Again, this was used to speed up the styling of the app
+* **zod** - This was used to help with form validation
+* **bcrypt** - This was used to hash the password before saving it to the database as well as comparing passwords when logging in.
+* **mysql2** - This was used to connect to the MySQL database.
+* **dnd-kit** - This was used to aid the drag and drop functionality of the list.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tutorial
+When you run the app you first need to navigate to the sign up form by clicking the **sign up** button on the home page.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Fill out the form and your account will be created, you will then be redirected to the shopping list page.
+
+To create items on the list click the **add new item** button, fill out the fields and click **add**, you will be taken back to your shopping list with the new item on there.
+
+Based on the quantities and prices of your items, a total will be calculated and displayed at the bottom of the list.
+
+You can also set a budget by clicking the edit button next to the budget amount at the bottom of the list. type in your budget and you will be warned if the total amount of items exceeds the budget amount.
+
+You can reorder the list by dragging and dropping the items.
+
+## Final thoughts
+
+If I was to put this project into production there are more things that I would do to it if I had more time, including butt not limited to;
+
+* **Automated testing** - Jest or Cypress to complete automated testing.
+* **limited timed sessions** - When somebody logs in the API would create an authorisation key with an expiry time, the expiry time would be increased each time data was retrieved from the API, if the expiry time is reached then that user would be required to re-login to increase security.
+

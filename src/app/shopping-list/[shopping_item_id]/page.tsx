@@ -1,9 +1,9 @@
 "use client";
 
 import { redirect } from 'next/navigation';
-import {getUserId, setUserId} from '@/lib/utils';
+import { getUserId, setUserId } from '@/lib/utils';
 import NewItem from '@/components/forms/NewItem';
-import {Button} from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import React from "react";
 
 export default function ShoppingListItem() {

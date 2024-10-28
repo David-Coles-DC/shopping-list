@@ -20,7 +20,7 @@ import React, { useState } from "react";
 import Link from 'next/link';
 import ShoppingListOuter from '@/components/ShoppingListOuter';
 import { redirect } from "next/navigation";
-import {getUserId, getBudgetAmount, updateBudgetAmount, setUserId} from '@/lib/utils';
+import { getUserId, getBudgetAmount, updateBudgetAmount, setUserId } from '@/lib/utils';
 
 export default function ShoppingList() {
     const [ shoppingTotal, setShoppingTotal ] = useState(0);

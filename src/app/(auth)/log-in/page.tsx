@@ -1,5 +1,4 @@
 import LogInForm from '@/components/forms/LogIn';
-import {redirect} from "next/navigation";
 
 export default function LogIn() {
     return <main className={'relative h-full pt-14'}>
