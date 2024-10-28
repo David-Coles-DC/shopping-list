@@ -17,9 +17,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
 
 ## Database
-The project has a MySQL database set up using [Aiven](https://aiven.io/) as it's free and saves the hassle of having to set up a new local database to test the project, the connection details of this can be found in the .env file.
-
-The database structure has been exported so that you can use a different MySQL database if you want to, this is found in the database.sql file.
+The project has a MySQL database set up using [Aiven](https://aiven.io/) as it's free and saves the hassle of having to set up a new local database to test the project, the connection details of this can be found in the .env file. These have been sent separately because of security issues, but you can set up a new .env file to an alternative MySQL database as the database structure has been exported so that you can use a different MySQL database if you want to, this is found in the database.sql file.
 
 ## Packages
 
